@@ -1,0 +1,662 @@
+/* Загальні стилі для всього сайту */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+}
+
+
+  section {
+    padding: 3rem 0;
+  }
+
+  .title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  section p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .sushi-card {
+    max-width: 250px;
+    transition: box-shadow 0.3s;
+  }
+  .sushi-card:hover {
+    box-shadow: 0 18px 18px rgba(0, 0, 0, 0.1); /* Додавання тіні при наведенні */
+  }
+  .testimonial-slider {
+    padding: 1rem;
+  }
+/* 
+
+main section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+} */
+
+.about {
+  overflow:hidden;
+  background-color: #f2f2f2;
+}
+
+/* Спеціальні стилі для слайдера відгуків */
+.testimonial-slider {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.testimonial-slide {
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.testimonial-slide img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 1rem auto;
+  object-fit: cover;
+}
+
+.testimonial-slide p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial-slide span {
+  font-weight: bold;
+}
+
+/* Спеціальні стилі для форми замовлення */
+#order {
+  background-color: #f9f9f9;
+  padding: 80px 0;
+  text-align: center;
+}
+
+#message {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+#order h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+#order form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#order form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#order form input[type="text"],
+#order form input[type="tel"] {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#order form button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#order form button:hover {
+  background-color: #555;
+}
+
+/* Спеціальні стилі для карточок суші */
+.sushi-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sushi-card {
+  max-width: 300px;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.sushi-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.sushi-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.sushi-card p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sushi-card button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.sushi-card button:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  clear: both;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  height: 50px;
+  padding-right: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #555;
+}
+
+.close-menu {
+  display: none;
+}
+
+
+
+
+
+.photo-section {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.photo-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7; /* Прозорість фонового фото */
+  transition: opacity 0.3s ease;
+
+}
+.photo-section:hover .photo-background {
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.photo-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%); /* Затемнення фото, якщо потрібно */
+}
+
+
+
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 50px;
+}
+
+.content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.2rem;
+  padding-bottom: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button {
+  background-color: #ff6347;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e53935;
+}
+
+
+
+
+
+
+
+
+
+/* Основні стилі для футера */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 0;
+}
+
+.footer-section  img{
+max-width: 100px;
+padding-bottom: 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-section.description {
+  max-width: 300px;
+}
+
+.footer-section.description .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-section.description p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.contact {
+  margin-bottom: 15px;
+}
+
+.contact span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.socials a {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.socials a:hover {
+  color:  #ff6347;
+  transition: color 0.3s ease;
+}
+.footer-section.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.footer-section.links h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-section.links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section.links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section.links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section.links ul li a:hover {
+  color: #ff6347;
+  transition: color 0.3s ease;
+}
+
+.footer-section.contact-form {
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.text-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #ff6347;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e53935;
+}
+
+.footer-bottom {
+  background-color: #222;
+  padding: 10px 0;
+  text-align: center;
+  color: #ccc;
+}
+
+.contact a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact a:hover {
+  transition: color 0.3s ease;
+  color: #ff6347;
+}
+
+
+
+@media (max-width: 1100px) {
+  header {
+    padding: 10px;
+  }
+
+header h1{
+  font-size: 20px;
+}
+
+.menu a {
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+}
+
+@media (max-width: 768px) {
+
+  .menu {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    flex-direction: column;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #menu-toggle-checkbox {
+    display: none;
+  }
+  .menu.active {
+    display: flex;
+  }
+
+
+  .menu a {
+    font-size: 1rem;
+    padding: 10px;
+    display: block;
+    margin: 10px 0;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .menu-toggle label {
+    display: block;
+    width: 30px;
+    height: 25px;
+    position: relative;
+  }
+
+  .menu-toggle label span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease;
+  }
+
+  .menu-toggle label span:nth-child(1) {
+    top: 0;
+  }
+
+  .menu-toggle label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .menu-toggle label span:nth-child(3) {
+    bottom: 0;
+  }
+
+  .close-menu {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+    z-index: 1100;
+  }
+
+  #menu-toggle-checkbox:checked + label span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  #menu-toggle-checkbox:checked + label span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle-checkbox:checked + label span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  .menu li {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .menu a {
+    font-size: 1.2rem;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .menu-toggle label {
+    display: block;
+    width: 30px;
+    height: 25px;
+    position: relative;
+  }
+
+  .menu-toggle label span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    transition: transform 0.3s ease;
+  }
+
+  .menu-toggle label span:nth-child(1) {
+    top: 0;
+  }
+
+  .menu-toggle label span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .menu-toggle label span:nth-child(3) {
+    bottom: 0;
+  }
+
+  #menu-toggle-checkbox:checked + label span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  #menu-toggle-checkbox:checked + label span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #menu-toggle-checkbox:checked + label span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+
+  .footer-content {
+    flex-direction: column;
+}
+
+.footer-content .footer-section {
+  max-width: 100%;
+}
+  .contacts {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contacts div {
+    padding: 20px;
+  }
+  .content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+.title {
+  font-size: 2rem;
+}
+}
+
